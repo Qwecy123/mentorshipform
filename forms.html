@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mentorship Application Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin: 0 auto 20px auto;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            display: block;
+            margin: 20px auto 0 auto;
+        }
+
+        button:hover {
+            background-color: darkred;
+        }
+
+        .required::before {
+            content: " *";
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Mentorship Application Form</h1>
+        <form action="https://formspree.io/f/xvgolblv" method="post">
+            <label for="name" class="required"><b>Name:</b></label><br>
+            <input type="text" id="name" name="name" required><br><br>
+            
+            <label for="contact" class="required"><b>Whatsapp Contact:</b></label><br>
+            <input type="text" id="contact" name="contact" required><br><br>
+            
+            <label for="school" class="required"><b>School Voda:</b></label><br>
+            <input type="text" id="school" name="school" required><br><br>
+            
+            <label for="gender" class="required"><b>Gender:</b></label><br>
+            <input type="radio" id="male" name="gender" value="Male" required>
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="Female" required>
+            <label for="female">Female</label><br><br>
+            
+            <label for="programme" class="required"><b>Programme of Study:</b></label><br>
+            <input type="text" id="programme" name="programme" required><br><br>
+            
+            <label for="year" class="required"><b>Year:</b></label><br>
+            <select id="year" name="year" required>
+                <option value="Year 1">Year 1</option>
+                <option value="Year 2">Year 2</option>
+                <option value="Year 3">Year 3</option>
+                <option value="Year 4">Year 4</option>
+                <option value="Year 5">Year 5</option>
+                <option value="Year 6">Year 6</option>
+            </select><br><br>
+            
+            <label for="reason" class="required"><b>Why would you like to become a mentor:</b></label><br>
+            <textarea id="reason" name="reason" rows="5" cols="40" required></textarea><br><br>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
